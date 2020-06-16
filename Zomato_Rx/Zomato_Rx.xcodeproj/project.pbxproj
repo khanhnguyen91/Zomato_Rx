@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040987EC2494CDCA00EB220E /* UIView+Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040987EB2494CDCA00EB220E /* UIView+Designable.swift */; };
+		040987EE2494D06400EB220E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040987ED2494D06400EB220E /* HomeViewController.swift */; };
+		040987F02494EE4A00EB220E /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040987EF2494EE4A00EB220E /* UIButton+Extension.swift */; };
 		0495066C248946C90051C1C9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495066B248946C90051C1C9 /* R.generated.swift */; };
 		0495066F248A8AC50051C1C9 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0495066E248A8AC50051C1C9 /* TabBar.storyboard */; };
 		04950671248A8B690051C1C9 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04950670248A8B690051C1C9 /* Profile.storyboard */; };
@@ -39,6 +42,12 @@
 		049506AD248BA2B20051C1C9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049506AC248BA2B20051C1C9 /* Constants.swift */; };
 		049506AF248BA3240051C1C9 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049506AE248BA3240051C1C9 /* Reachability.swift */; };
 		049506B1248BA3810051C1C9 /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049506B0248BA3810051C1C9 /* SwinjectStoryboard+Setup.swift */; };
+		049506B4248BAB760051C1C9 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049506B3248BAB760051C1C9 /* Home.storyboard */; };
+		049506BB248BB17C0051C1C9 /* Okra-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049506B6248BB17B0051C1C9 /* Okra-Medium.ttf */; };
+		049506BC248BB17C0051C1C9 /* Okra-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049506B7248BB17C0051C1C9 /* Okra-Light.ttf */; };
+		049506BD248BB17C0051C1C9 /* Okra-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049506B8248BB17C0051C1C9 /* Okra-Bold.ttf */; };
+		049506BE248BB17C0051C1C9 /* Okra-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049506B9248BB17C0051C1C9 /* Okra-SemiBold.ttf */; };
+		049506BF248BB17C0051C1C9 /* Okra-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049506BA248BB17C0051C1C9 /* Okra-Regular.ttf */; };
 		326E15E2C1BA7848E00DE6EF /* Pods_Zomato_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033976A291543CED00ED957E /* Pods_Zomato_Rx.framework */; };
 		8E7564FA248119D4004BC5CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7564F9248119D4004BC5CE /* AppDelegate.swift */; };
 		8E7564FE248119D4004BC5CE /* DiningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7564FD248119D4004BC5CE /* DiningViewController.swift */; };
@@ -67,6 +76,9 @@
 
 /* Begin PBXFileReference section */
 		033976A291543CED00ED957E /* Pods_Zomato_Rx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zomato_Rx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		040987EB2494CDCA00EB220E /* UIView+Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Designable.swift"; sourceTree = "<group>"; };
+		040987ED2494D06400EB220E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		040987EF2494EE4A00EB220E /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		0495066B248946C90051C1C9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		0495066E248A8AC50051C1C9 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		04950670248A8B690051C1C9 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -99,6 +111,12 @@
 		049506AC248BA2B20051C1C9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		049506AE248BA3240051C1C9 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		049506B0248BA3810051C1C9 /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
+		049506B3248BAB760051C1C9 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		049506B6248BB17B0051C1C9 /* Okra-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Okra-Medium.ttf"; sourceTree = "<group>"; };
+		049506B7248BB17C0051C1C9 /* Okra-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Okra-Light.ttf"; sourceTree = "<group>"; };
+		049506B8248BB17C0051C1C9 /* Okra-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Okra-Bold.ttf"; sourceTree = "<group>"; };
+		049506B9248BB17C0051C1C9 /* Okra-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Okra-SemiBold.ttf"; sourceTree = "<group>"; };
+		049506BA248BB17C0051C1C9 /* Okra-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Okra-Regular.ttf"; sourceTree = "<group>"; };
 		04E1CF9B2487ECA1004DEEA7 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		893A1449224C1A7635B8AE8B /* Pods-Zomato_Rx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zomato_Rx.debug.xcconfig"; path = "Target Support Files/Pods-Zomato_Rx/Pods-Zomato_Rx.debug.xcconfig"; sourceTree = "<group>"; };
 		8E7564F6248119D4004BC5CE /* Zomato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zomato.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,6 +236,27 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		049506B2248BAB590051C1C9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				049506B3248BAB760051C1C9 /* Home.storyboard */,
+				040987ED2494D06400EB220E /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		049506B5248BB0750051C1C9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				049506B8248BB17C0051C1C9 /* Okra-Bold.ttf */,
+				049506B7248BB17C0051C1C9 /* Okra-Light.ttf */,
+				049506B6248BB17B0051C1C9 /* Okra-Medium.ttf */,
+				049506BA248BB17C0051C1C9 /* Okra-Regular.ttf */,
+				049506B9248BB17C0051C1C9 /* Okra-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		04E1CF942487EA7F004DEEA7 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +268,8 @@
 		04E1CF952487EA8C004DEEA7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				040987EB2494CDCA00EB220E /* UIView+Designable.swift */,
+				040987EF2494EE4A00EB220E /* UIButton+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,6 +305,7 @@
 		04E1CF992487EABF004DEEA7 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				049506B2248BAB590051C1C9 /* Home */,
 				0495066D248A8AA30051C1C9 /* Tabbar */,
 				04E1CF9A2487EAF9004DEEA7 /* Dining */,
 				04950675248A8FD20051C1C9 /* NightLife */,
@@ -326,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				04E1CF942487EA7F004DEEA7 /* App */,
+				049506B5248BB0750051C1C9 /* Fonts */,
 				04E1CF952487EA8C004DEEA7 /* Extensions */,
 				04E1CF962487EA9C004DEEA7 /* Utils */,
 				04E1CF972487EAA7004DEEA7 /* Repository */,
@@ -465,11 +508,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049506B4248BAB760051C1C9 /* Home.storyboard in Resources */,
 				0495066F248A8AC50051C1C9 /* TabBar.storyboard in Resources */,
+				049506BE248BB17C0051C1C9 /* Okra-SemiBold.ttf in Resources */,
+				049506BD248BB17C0051C1C9 /* Okra-Bold.ttf in Resources */,
+				049506BF248BB17C0051C1C9 /* Okra-Regular.ttf in Resources */,
 				8E756506248119D7004BC5CE /* LaunchScreen.storyboard in Resources */,
 				04950671248A8B690051C1C9 /* Profile.storyboard in Resources */,
+				049506BC248BB17C0051C1C9 /* Okra-Light.ttf in Resources */,
 				04950677248B5FCA0051C1C9 /* Dining.storyboard in Resources */,
 				8E756503248119D7004BC5CE /* Assets.xcassets in Resources */,
+				049506BB248BB17C0051C1C9 /* Okra-Medium.ttf in Resources */,
 				04950673248A8C800051C1C9 /* NightLife.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,6 +656,7 @@
 				04950688248B9E770051C1C9 /* HasMenuStatus.swift in Sources */,
 				04950692248B9EE60051C1C9 /* Restaurant.swift in Sources */,
 				049506AD248BA2B20051C1C9 /* Constants.swift in Sources */,
+				040987F02494EE4A00EB220E /* UIButton+Extension.swift in Sources */,
 				0495069C248B9F560051C1C9 /* User.swift in Sources */,
 				04950684248B9E400051C1C9 /* AllReviews.swift in Sources */,
 				04950686248B9E5D0051C1C9 /* BgColor.swift in Sources */,
@@ -620,7 +670,9 @@
 				0495067B248B9D960051C1C9 /* APIKey.swift in Sources */,
 				04950696248B9F140051C1C9 /* Restaurants.swift in Sources */,
 				0495067F248B9DD30051C1C9 /* APIRoute.swift in Sources */,
+				040987EE2494D06400EB220E /* HomeViewController.swift in Sources */,
 				049506A5248B9FC80051C1C9 /* RestaurantDetail.swift in Sources */,
+				040987EC2494CDCA00EB220E /* UIView+Designable.swift in Sources */,
 				0495066C248946C90051C1C9 /* R.generated.swift in Sources */,
 				04950681248B9DEE0051C1C9 /* APIError.swift in Sources */,
 			);

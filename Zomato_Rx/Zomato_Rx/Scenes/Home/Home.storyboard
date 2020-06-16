@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gqT-KI-7FP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Okra-Medium.ttf">
+            <string>Okra-Medium</string>
+        </array>
+        <array key="Okra-Regular.ttf">
+            <string>Okra-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="jda-na-vGm">
+            <objects>
+                <viewController id="gqT-KI-7FP" customClass="HomeViewController" customModule="Zomato" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YPd-QF-aBD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jE-aZ-jBb">
+                                <rect key="frame" x="344" y="44" width="54" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="mAf-w4-dDk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Okra-Medium" family="Okra" pointSize="11"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_normal" translatesAutoresizingMaskIntoConstraints="NO" id="cXa-VQ-CT0">
+                                <rect key="frame" x="80" y="108" width="254" height="63.5"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PHL-LA-WmQ">
+                                <rect key="frame" x="0.0" y="216.5" width="414" height="414"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PHL-LA-WmQ" secondAttribute="height" multiplier="1:1" id="A6Y-Fx-BFl"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hPg-iW-jyL">
+                                    <size key="itemSize" width="414" height="415"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodCell" id="08R-AO-NQc">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="415"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JTn-Hk-hSt">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="415"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l4x-ot-h2N">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="415"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="l4x-ot-h2N" firstAttribute="leading" secondItem="JTn-Hk-hSt" secondAttribute="leading" id="Axa-wx-Vqr"/>
+                                                <constraint firstItem="l4x-ot-h2N" firstAttribute="top" secondItem="JTn-Hk-hSt" secondAttribute="top" id="D94-eR-H5I"/>
+                                                <constraint firstAttribute="bottom" secondItem="l4x-ot-h2N" secondAttribute="bottom" id="OIi-Eh-P4u"/>
+                                                <constraint firstAttribute="trailing" secondItem="l4x-ot-h2N" secondAttribute="trailing" id="wje-IU-4eH"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="415"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFn-fM-cA6">
+                                <rect key="frame" x="32" y="690.5" width="350" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Pag-vZ-zUy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Okra-Medium" family="Okra" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Continue with Email" image="ic-mail">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VOn-p1-TkB">
+                                <rect key="frame" x="32" y="743.5" width="350" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Int-em-94V">
+                                        <rect key="frame" x="0.0" y="0.0" width="171" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Okra-Medium" family="Okra" pointSize="13"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="Facebook" image="ic-facebook">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU7-xi-9f6">
+                                        <rect key="frame" x="179" y="0.0" width="171" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Okra-Medium" family="Okra" pointSize="13"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="Google" image="ic-google">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="QzB-By-s2y"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing, you agree to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8It-N4-BoB">
+                                <rect key="frame" x="147.5" y="820.5" width="119.5" height="12"/>
+                                <fontDescription key="fontDescription" name="Okra-Regular" family="Okra" pointSize="9"/>
+                                <color key="textColor" red="0.42337279524539878" green="0.50199371579999996" blue="0.50189799069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="VUu-If-lSr">
+                                <rect key="frame" x="117" y="836.5" width="180.5" height="9.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bl-md-bsd">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="9.5"/>
+                                        <fontDescription key="fontDescription" name="Okra-Regular" family="Okra" pointSize="7"/>
+                                        <color key="textColor" red="0.42337279524539878" green="0.50199371579999996" blue="0.50189799069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyx-Ud-JEd">
+                                        <rect key="frame" x="68" y="0.0" width="46.5" height="9.5"/>
+                                        <fontDescription key="fontDescription" name="Okra-Regular" family="Okra" pointSize="7"/>
+                                        <color key="textColor" red="0.42337279524539878" green="0.50199371579999996" blue="0.50189799069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content Policies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNj-Sn-DeA">
+                                        <rect key="frame" x="126.5" y="0.0" width="54" height="9.5"/>
+                                        <fontDescription key="fontDescription" name="Okra-Regular" family="Okra" pointSize="7"/>
+                                        <color key="textColor" red="0.42337279524539878" green="0.50199371579999996" blue="0.50189799069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cXa-VQ-CT0" firstAttribute="leading" secondItem="POC-Yi-crG" secondAttribute="leading" constant="80" id="5YE-SX-liG"/>
+                            <constraint firstItem="DFn-fM-cA6" firstAttribute="centerX" secondItem="POC-Yi-crG" secondAttribute="centerX" id="6mS-eq-kPk"/>
+                            <constraint firstItem="PHL-LA-WmQ" firstAttribute="leading" secondItem="POC-Yi-crG" secondAttribute="leading" id="7F8-yt-LCG"/>
+                            <constraint firstItem="DFn-fM-cA6" firstAttribute="leading" secondItem="POC-Yi-crG" secondAttribute="leading" constant="32" id="AXe-yh-Hbt"/>
+                            <constraint firstItem="POC-Yi-crG" firstAttribute="trailing" secondItem="7jE-aZ-jBb" secondAttribute="trailing" constant="16" id="IJT-Ti-Hq4"/>
+                            <constraint firstItem="PHL-LA-WmQ" firstAttribute="top" secondItem="cXa-VQ-CT0" secondAttribute="bottom" constant="45" id="Ih9-lx-06b"/>
+                            <constraint firstItem="VUu-If-lSr" firstAttribute="centerX" secondItem="POC-Yi-crG" secondAttribute="centerX" id="LGx-lg-j3K"/>
+                            <constraint firstItem="PHL-LA-WmQ" firstAttribute="width" secondItem="YPd-QF-aBD" secondAttribute="width" id="LZN-tQ-r5Y"/>
+                            <constraint firstItem="POC-Yi-crG" firstAttribute="trailing" secondItem="VOn-p1-TkB" secondAttribute="trailing" constant="32" id="LiY-yV-KqG"/>
+                            <constraint firstItem="PHL-LA-WmQ" firstAttribute="centerX" secondItem="POC-Yi-crG" secondAttribute="centerX" id="Qd9-L4-Tda"/>
+                            <constraint firstItem="cXa-VQ-CT0" firstAttribute="centerX" secondItem="POC-Yi-crG" secondAttribute="centerX" id="R0q-6g-EMT"/>
+                            <constraint firstItem="VOn-p1-TkB" firstAttribute="leading" secondItem="POC-Yi-crG" secondAttribute="leading" constant="32" id="RIN-X6-JdI"/>
+                            <constraint firstItem="7jE-aZ-jBb" firstAttribute="top" secondItem="POC-Yi-crG" secondAttribute="top" id="RwM-bS-b2x"/>
+                            <constraint firstItem="VUu-If-lSr" firstAttribute="top" secondItem="8It-N4-BoB" secondAttribute="bottom" constant="4" id="ag5-JL-8eh"/>
+                            <constraint firstItem="8It-N4-BoB" firstAttribute="top" secondItem="VOn-p1-TkB" secondAttribute="bottom" constant="32" id="c1E-zr-wTi"/>
+                            <constraint firstItem="cXa-VQ-CT0" firstAttribute="top" secondItem="POC-Yi-crG" secondAttribute="top" constant="64" id="hng-H2-cfM"/>
+                            <constraint firstItem="POC-Yi-crG" firstAttribute="bottom" secondItem="VUu-If-lSr" secondAttribute="bottom" constant="16" id="nJe-vn-xST"/>
+                            <constraint firstItem="VOn-p1-TkB" firstAttribute="top" secondItem="DFn-fM-cA6" secondAttribute="bottom" constant="8" id="szV-Fm-evO"/>
+                            <constraint firstItem="8It-N4-BoB" firstAttribute="centerX" secondItem="POC-Yi-crG" secondAttribute="centerX" id="un0-WO-nTL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="POC-Yi-crG"/>
+                    </view>
+                    <connections>
+                        <outlet property="foodCollectionView" destination="PHL-LA-WmQ" id="KIu-HG-aoO"/>
+                        <outlet property="skipButton" destination="7jE-aZ-jBb" id="v9b-d4-8Wq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJs-CL-mBk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.971014492753625" y="89.732142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic-facebook" width="24" height="24"/>
+        <image name="ic-google" width="24" height="24"/>
+        <image name="ic-mail" width="24" height="24"/>
+        <image name="logo_normal" width="300" height="63.5"/>
+    </resources>
+</document>

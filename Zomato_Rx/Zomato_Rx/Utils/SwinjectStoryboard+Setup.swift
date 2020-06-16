@@ -23,8 +23,8 @@ extension SwinjectStoryboard {
         }
         .inObjectScope(.container)
 
-        defaultContainer.storyboardInitCompleted(DiningViewController.self) { r, c in
-            c.api = r.resolve(RestaurantsRepository.self)
+        defaultContainer.storyboardInitCompleted(DiningViewController.self) { _, _ in
+//            c.api = r.resolve(RestaurantsRepository.self)
         }
     }
 }
